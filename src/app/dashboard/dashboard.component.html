@@ -1,0 +1,31 @@
+<md-toolbar color="primary">Innominds
+</md-toolbar>
+
+<div class="app-content">
+    <div class="group">
+        <form>
+            <span class="app-action">
+        <button md-fab (click)="logout()"><md-icon>Exit</md-icon></button>
+      </span><br><br>
+            <md-card>
+                <md-tab-group>
+                    <md-tab *ngFor="let sd of data">
+                        <ul>
+                            <i>
+                <ng-template md-tab-label>
+                  {{sd.from.name}}
+                </ng-template>
+                <small>Message :</small> <p>{{sd.message}}</p>
+                <small>created_time :</small> <p>{{sd.created_time}}</p>                
+                <small>updated_time :</small> <p>{{sd.updated_time}}</p>
+                <small>Id :</small> <p>{{sd.from.id}}</p>
+                
+
+              </i>
+                        </ul>
+                    </md-tab>
+                </md-tab-group>
+            </md-card>
+        </form>
+    </div>
+</div>
