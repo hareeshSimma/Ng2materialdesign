@@ -13,10 +13,13 @@ export class AuthenticateService {
 
   constructor(private _router: Router) { }
 
+// Logout section
+
   logout() {
     localStorage.removeItem("user");
     this._router.navigate(['/login']);
   }
+//Login section 
 
   login(user) {
     let authenticatedUser = users.find(u => u.username === user.username);
@@ -28,6 +31,8 @@ export class AuthenticateService {
     }
     return false;
   }
+
+//user credentials checking
 
   checkCredentials() {
     if (localStorage.getItem("user") === null){
