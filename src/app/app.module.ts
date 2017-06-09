@@ -12,6 +12,9 @@ import { enableProdMode } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MyuserComponent } from './myuser/myuser.component';
+import { HomeComponent } from './home/home.component';
+import {MdSidenavModule} from '@angular/material';
+
 
 enableProdMode();
 @NgModule({
@@ -19,7 +22,8 @@ enableProdMode();
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    MyuserComponent
+    MyuserComponent,
+HomeComponent
   ],
   imports: [
     MaterialModule,
@@ -27,7 +31,8 @@ enableProdMode();
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MdSidenavModule
    
   ],
   providers: [AuthenticateService],

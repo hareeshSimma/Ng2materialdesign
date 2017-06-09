@@ -1,4 +1,4 @@
-.app-content {
+/*.app-content {
     margin: 34px;
     padding: 34px;
 }
@@ -7,7 +7,7 @@ form {
     width: auto;
     height: auto;
     margin: auto;
-    /*padding: 3em 2em 2em 2em;*/
+   
     background: #fafafa;
     border: 1px solid #ebebeb;
     box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
@@ -17,4 +17,29 @@ form {
 .group {
     position: relative;
     margin-bottom: 45px;
+}*/
+
+
+/*//helloworld*/
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+md-card {
+    max-width: 80%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+md-toolbar-row {
+    justify-content: space-between;
+}
+
+.done {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
 }
